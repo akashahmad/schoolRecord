@@ -9,13 +9,7 @@ export class DashboardComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit(): void {
-    if (!localStorage.getItem('name')){
-      this.router.navigateByUrl('login')
-    //  window.location.href='http://localhost:4200/login'
-      
-    }
-    
-  }
+   }
 logout(){
   localStorage.clear()
   this.router.navigateByUrl('login')

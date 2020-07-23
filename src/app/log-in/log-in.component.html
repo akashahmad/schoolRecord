@@ -8,7 +8,7 @@
   <div class="login-container">
       <!-- {/* login starts from here */} -->
       <div class="login-main-div">
-          <form>
+          <form #loginForm="ngForm" (ngSubmit)="login(loginForm.value)">
               <!-- {/* heading */} -->
               <div class="heading fnt-family-sans">
                   <h5>Welcome Back!</h5>
@@ -18,12 +18,12 @@
                   <!-- {/* Username */} -->
                   <div class="insideMain-Div">
                       <label class="fnt-family-sans">Username</label>
-                      <input class="login-input fnt-family-sans" placeholder="johndoe" />
+                      <input class="login-input fnt-family-sans" ngModel name="username" placeholder="johndoe" />
                   </div>
                   <!-- {/* password */} -->
                   <div class="insideMain-Div fnt-family-sans">
                       <label>Password</label>
-                      <input class="login-input fnt-family-sans" placeholder="johndoe" type="password" />
+                      <input class="login-input fnt-family-sans" ngModel name="password" placeholder="johndoe" type="password" />
                   </div>
                   <!-- {/* checkbox */} -->
                   <div class="checkbox-mainDiv">
@@ -34,7 +34,7 @@
                   </div>
                   <!-- {/* buttons */} -->
                   <div class="buttons fnt-family-sans">
-                      <button class="loginButton buttonColor btn-red fnt-family-sans" (click)="login()">Login</button>
+                      <Button class="loginButton buttonColor btn-red fnt-family-sans">Login</Button>
                   </div>
                   <!-- {/* forgot Password */} -->
                   <div class="forgotten-Password fnt-family-sans">

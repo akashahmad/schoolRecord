@@ -7,7 +7,8 @@ import { LogInComponent } from './log-in/log-in.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ImportPopupComponent } from './import-popup/import-popup.component';
 import { HeaderComponent } from './header/header.component';
-
+import {FormsModule} from "@angular/forms"
+import {from} from 'rxjs'
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,8 @@ import { HeaderComponent } from './header/header.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

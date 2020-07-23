@@ -1,0 +1,9 @@
+{
+  "apiUrl": "http://simulation-api.adaptive.dev.rcsnp.rsiapps.com",
+    "version": "1.0",
+      "registeredUsers": [{ "login": "test", "password": "test" },
+      { "login": "test1", "password": "test1" },
+      { "login": "test2", "password": "test2" },
+      { "login": "test3", "password": "test3" }
+      ]
+}

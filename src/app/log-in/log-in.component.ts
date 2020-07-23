@@ -1,29 +1,26 @@
 import { Component, OnInit } from '@angular/core';
+import {AuthenticationService} from "../sevices/authentication.service";
 import { Router } from "@angular/router";
-
 @Component({
   selector: 'app-log-in',
   templateUrl: './log-in.component.html',
 })
 export class LogInComponent implements OnInit {
 click="clicking";
-  constructor(private router: Router) { }
-
-  ngOnInit(): void {
-    if (localStorage.getItem('name')){
-      this.router.navigateByUrl('')
-      // window.location.href='http://localhost:4200'
-      this.click="localstorage"
-    }
-    else{
-      this.click="empty"
-    }
+  constructor(private authentication:AuthenticationService,private router: Router) { 
     
   }
+ 
+  ngOnInit(): void {
+    if (!!localStorage.getItem('currentUser')){
+      this.router.navigateByUrl('')
+    //  window.location.href='http://localhost:4200/login'
+      
+    }
+  }
   //login fuction
-login(){
-localStorage.setItem('name',"hassan")
-this.router.navigateByUrl('')
-// window.location.href='http://localhost:4200'
+login(value){
+  this.authentication.login(value.username,value.password)
+ 
 }
 }

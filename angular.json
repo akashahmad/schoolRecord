@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "arcone-frontend"
+    }
+  },
+  "defaultProject": "arcone-frontend",
+  "cli": {
+    "analytics": false
+  }
 }
