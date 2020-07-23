@@ -91,9 +91,14 @@ bodY{
   height: 100%;
   margin: 0px;
   padding: 0px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #F1F1F1;
 }
 div#root {
   height: 100%;
+}
+.fnt-family-sans{
+  font-family: 'Roboto', sans-serif;
 }
 /* ends here */
 
@@ -347,10 +352,10 @@ padding-left: 15px;
 padding-top: 4px;
 }
 /* right side css of header */
-.dataEntry-header .leftSide-inputs-buttons{
+/* .dataEntry-header .leftSide-inputs-buttons{
   display: flex;
   padding-top: 20px;
-}
+} */
 .dataEntry-header .leftSide-inputs-buttons .selectOption-for-Filter{
   height: 37px;
   padding: 5px 40px 6px 5px;
@@ -390,7 +395,7 @@ color: #212120;
 }
 /* body section of table */
 .tableBody{
-  padding: 25px 0px 25px 0px;
+  padding: 18px 0px 25px 0px;
 }
 .tableBody .header-ImgAndHeading{
   border-radius: 4px;
@@ -548,8 +553,8 @@ padding-top: 4px;
   padding-top: 20px;
 }
 .dataEntry-header .leftSide-inputs-buttons .selectOption-for-Filter{
-  height: 41px;
-  padding: 5px 40px 6px 5px;
+  height: 40px;
+  padding: 5px 40px 5px 5px;
   font-size: 16px;
   font-weight: normal;
   color: #767573;
@@ -559,7 +564,7 @@ padding-top: 4px;
   display: flex;
 }
 .dataEntry-header .leftSide-inputs-buttons .inputHeader-section{
-      padding: 1px 30px 1px 10px;
+      padding: 1px 30px 0px 10px;
       width: 270px;
       margin: 0px 0px 0px 10px;
       border: 1px solid #DAD8D5;
@@ -573,7 +578,7 @@ padding-top: 4px;
   position: absolute;
   z-index: 1111;
   position: absolute;
-  margin: 7px 0px 0px -28px;
+  margin: 10px 0px 0px -28px;
 }
 /* message for records */
 .message-when-no-records{
@@ -586,7 +591,7 @@ color: #212120;
 }
 /* body section of table */
 .tableBody{
-  padding: 25px 0px 25px 0px;
+  padding: 18px 0px 25px 0px;
 }
 .tableBody .header-ImgAndHeading{
   border-radius: 4px;
@@ -649,7 +654,7 @@ color: #212120;
   color: #212120;    
 }
 .tableBody .body-ImgAndData ul .studentName{
-  padding: 12px 0px 0px 10px;
+  padding: 12px 0px 0px 35px;
   font-size: 16px;
   font-weight: bold;
   color: #212120;
@@ -660,14 +665,17 @@ color: #212120;
   font-weight: bold;
   color: #212120;
 }
+.tableBody .body-ImgAndData ul .data-of-content{
+  padding: 0px 0px 0px 17px;
+}
 .tableBody .body-ImgAndData ul .schoolName{
-  padding: 12px 0px 0px 35px;
+  padding: 12px 0px 0px 50px;
   font-size: 16px;
   font-weight: bold;
   color: #212120;
 }
 .tableBody .body-ImgAndData ul .TeacherName{
-  padding: 12px 0px 0px 35px;
+  padding: 12px 0px 0px 50px;
   font-size: 16px;
   font-weight: bold;
   color: #212120;
@@ -725,7 +733,7 @@ color: #212120;
   border-radius: 4px;
   border: solid 1px #DAD8D5;
   background-color: #FFFFFF;
-  width: 90%;
+  width: 95%;
   margin: 6px 0px 0px 0px;
   padding: 0px 10px 0px 10px;
 }
