@@ -1,2 +1,210 @@
-<p>dashboard</p>
-<button (click)="logout()">Logout<button>
+<!-- <p>dashboard</p>
+<button (click)="logout()">Logout<button> -->
+<div class="container-fluid">
+    <div
+        class="dataEntry-container">
+        <!-- {/* data entry heading portion */} -->
+        <div
+            class="dataEntry-header">
+            <!-- {/* left side portion */} -->
+            <div>
+                <div class="welcomeHeading">
+                    <h5>Welcome!</h5>
+                </div>
+                <div class="schoolName-Date">
+                    <h5>School Name</h5>
+                    <h6>06/25/2020</h6>
+                </div>
+            </div>
+            <!-- {/* right side data */} -->
+            <div
+                class="leftSide-inputs-buttons">
+                <!-- {/* select and input */} -->
+                <div class="select-and-headerDiv">
+                    <div>
+                        <select class="selectOption-for-Filter">
+                            <option>Filter By</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input class="inputHeader-section" placeholder="Search"/>
+                        <img src="../../assets/images/searchAngular-input.png"/>
+                    </div>
+                </div>
+                <!-- {/* buttons */} -->
+                <div class="buttonMainDiv">
+                    <button class="commonButton buttonColor btn-black mrg-left-10">Add Student</button>
+                    <button class="commonButton buttonColor btn-red mrg-left-10">Import File</button>
+                </div>
+            </div>
+        </div>
+        <!-- {/* no data message displayed */} -->
+        <div class="message-when-no-records">
+            <h6>No record found.</h6>
+        </div>
+        <!-- {/* table section starts from here */} -->
+        <div class="tableBody">
+            <!-- {/* header of data */} -->
+            <div class="header-ImgAndHeading header-of-data-red-color">
+                <ul class="width-full-100">
+
+                    <li class="Li-Image"></li>
+
+                    <!-- {/* heading of data */} -->
+                    <div class="img-span width-10">
+                        <span><img src="../../assets/images/transparentArrow.png" width="15px"/></span>
+                        <li class="schoolName">ID</li>
+                    </div>
+                    <!-- {/* Studengt Name */} -->
+                    <div class="img-span-StudentName width-18">
+                        <span><img src="../../assets/images/transparentArrow.png" width="15px"/></span>
+                        <li class="schoolName">Student Name</li>
+                    </div>
+                    <!-- {/* Grade */} -->
+                    <div class="img-span width-10">
+                        <span><img src="../../assets/images/transparentArrow.png" width="15px"/></span>
+                        <li class="schoolName">Grade</li>
+                    </div>
+                    <!-- {/* LAst School */} -->
+                    <div class="img-span width-12">
+                        <span><img src="../../assets/images/transparentArrow.png" width="15px"/></span>
+                        <li class="schoolName">Last School</li>
+                    </div>
+                    <!-- {/* Teacher Name */} -->
+                    <div class="img-span width-20">
+                        <span><img src="../../assets/images/transparentArrow.png" width="15px"/></span>
+                        <li class="schoolName">Teacher Name</li>
+                    </div>
+                    <!-- {/* Actions */} -->
+                    <div class="img-span-actionsCell width-20">
+                        <span><img src="../../assets/images/downwardarrow.png" width="15px"/></span>
+                        <li class="schoolName">Actions</li>
+                    </div>
+                </ul>
+            </div>
+            <!-- {/* body of table */} -->
+            <div class="body-ImgAndData body-of-data-white-color">
+                <ul class="width-full-100">
+                    <div>
+                        <li class="body-Li-Image"><img src="../../assets/images/tableDropdown.png" width="20px"/></li>
+                    </div>
+                    <div class="data-of-content width-10">
+                        <li class="studentId">000001</li>
+                    </div>
+                    <div class="data-of-contentName width-18">
+                        <li class="studentName">John doe</li>
+                    </div>
+                    <div class="data-of-content width-10">
+                        <li class="studentGrade">4</li>
+                    </div>
+                    <div class="data-of-content width-12">
+                        <li class="schoolName">School XYZ</li>
+                    </div>
+                    <div class="data-of-content width-20">
+                        <li class="TeacherName">Scarlet Johansson</li>
+                    </div>
+                    <div class="data-of-content buttonMarginLEft width-20">
+                        <div class="buttons-of-body">
+                            <button class="commonButton border-black-button">Delete</button>
+                            <button class="commonButton border-red-button mrg-left-10">Edit</button>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <!-- {/* dayta entry form */} -->
+            <div class="form-of-dataEntry">
+                <form>
+                    <!-- {/* row 1 name , date of birth , gender */} -->
+                    <div
+                        class="row-of-form">
+                        <!-- {/* name */} -->
+                        <div class="label-And-input">
+                            <label>Name</label>
+                            <input class="input-of-dataEntry" placeholder="John Doe"/>
+                        </div>
+                        <!-- {/* Date of birth */} -->
+                        <div class="label-And-input">
+                            <label>Date Of Birth</label>
+                            <input class="input-of-dataEntry" placeholder="06/22/1996"/>
+                        </div>
+                        <!-- {/* name */} -->
+                        <div class="label-And-input">
+                            <label>Gender</label>
+                            <select class="select-of-dataEntry">
+                                <option>Select Gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- {/* second row  Address , State , Grader */} -->
+                    <div
+                        class="row-of-form">
+                        <!-- {/* Address */} -->
+                        <div class="label-And-input">
+                            <label>Address</label>
+                            <input class="input-of-dataEntry" placeholder="ABC"/>
+                        </div>
+                        <!-- {/* State */} -->
+                        <div class="label-And-input">
+                            <label>State</label>
+                            <input class="input-of-dataEntry" placeholder="Florida"/>
+                        </div>
+                        <!-- {/* Grade*/} -->
+                        <div class="label-And-input">
+                            <label>Grade</label>
+                            <input class="input-of-dataEntry" placeholder="4"/>
+                        </div>
+                    </div>
+                    <!-- {/* third row  Teacher Name */} -->
+                    <div
+                        class="row-of-form">
+                        <!-- {/* Teacher Name */} -->
+                        <div class="label-And-input">
+                            <label>Teacher Name</label>
+                            <input class="last-input-of-dataEntry" placeholder="ABC"/>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- {/* 2nd row  */} -->
+            <div class="header-ImgAndHeading header-of-data-red-color">
+                <ul class="width-full-100">
+
+                    <li class="Li-Image"></li>
+                    <div class="img-span width-10">
+                        <span><img src="../../assets/images/transparentArrow.png" width="15px"/></span>
+                        <li class="schoolName">ID</li>
+                    </div>
+                    <!-- {/* Studengt Name */} -->
+                    <div class="img-span-StudentName width-18">
+                        <span><img src="../../assets/images/transparentArrow.png" width="15px"/></span>
+                        <li class="schoolName">Student Name</li>
+                    </div>
+                    <!-- {/* Grade */} -->
+
+
+                    <div class="img-span width-10">
+                        <span><img src="../../assets/images/transparentArrow.png" width="15px"/></span>
+                        <li class="schoolName">Grade</li>
+                    </div>
+                    <!-- {/* LAst School */} -->
+                    <div class="img-span width-12">
+                        <span><img src="../../assets/images/transparentArrow.png" width="15px"/></span>
+                        <li class="schoolName">Last School</li>
+                    </div>
+                    <!-- {/* Teacher Name */} -->
+                    <div class="img-span width-20">
+                        <span><img src="../../assets/images/transparentArrow.png" width="15px"/></span>
+                        <li class="schoolName">Teacher Name</li>
+                    </div>
+                    <!-- {/* Actions */} -->
+                    <div class="img-span-actionsCell width-20">
+                        <span><img src="../../assets/Images/transparentArrow.png" width="15px"/></span>
+                        <li class="schoolName">Actions</li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,5 +1,47 @@
-<p>log-in works!</p>
+<!-- <p>log-in works!</p>
 <div>
   <button (click)="login()">Login</button>
   <p>{{click}}</p>
+</div> -->
+
+<div class="container-fluid">
+  <div class="login-container">
+      <!-- {/* login starts from here */} -->
+      <div class="login-main-div">
+          <form>
+              <!-- {/* heading */} -->
+              <div class="heading">
+                  <h5>Welcome Back!</h5>
+              </div>
+              <!-- {/* label and input */} -->
+              <div class="label-And-input-MainDiv">
+                  <!-- {/* Username */} -->
+                  <div class="insideMain-Div">
+                      <label>Username</label>
+                      <input class="login-input" placeholder="johndoe" />
+                  </div>
+                  <!-- {/* password */} -->
+                  <div class="insideMain-Div">
+                      <label>Password</label>
+                      <input class="login-input" placeholder="johndoe" type="password" />
+                  </div>
+                  <!-- {/* checkbox */} -->
+                  <div class="checkbox-mainDiv">
+                      <label class="red-checkbox-container">Remember
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                      </label>
+                  </div>
+                  <!-- {/* buttons */} -->
+                  <div class="buttons">
+                      <button class="loginButton buttonColor btn-red" (click)="login()">Login</button>
+                  </div>
+                  <!-- {/* forgot Password */} -->
+                  <div class="forgotten-Password">
+                      <h6>Forgot Password?</h6>
+                  </div>
+              </div>
+          </form>
+      </div>
+  </div>
 </div>
