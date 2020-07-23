@@ -89,6 +89,8 @@ html{
 }
 bodY{
   height: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 div#root {
   height: 100%;
@@ -111,6 +113,7 @@ div#root {
   padding-bottom: 20px;
 }
 .headerMainDiv .header h5{
+  margin: 0px;
   font-weight: bold;
   font-stretch: normal;
   color: #212120;
@@ -132,7 +135,7 @@ padding-top: 6px;
 .login-container .login-main-div{
   width: 50%;
   background-color: #fff;
-  margin: 50px 0px 0px 0px;
+  margin: 50px 0px 50px 0px;
   padding: 0px 0px 40px 0px;
   border-radius: 4px;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.09);
@@ -257,7 +260,7 @@ color: #767573;
 .red-checkbox-container {
   display: block;
   position: relative;
-  padding:5px 0px 0px 35px;
+  padding:10px 0px 0px 35px;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -331,11 +334,13 @@ color: #212120;
 }
 .dataEntry-header .schoolName-Date h5{
 font-size: 20px;
+margin: 0px;
 font-weight: normal;
 color: #212120;
 }
 .dataEntry-header .schoolName-Date h6{
 font-size: 16px;
+margin: 0px;
 font-weight: normal;
 color: #767573;
 padding-left: 15px;
@@ -519,9 +524,11 @@ color: #212120;
 font-size: 24px;
 font-weight: 600;
 color: #212120;
+margin: 0px;
 }
 .dataEntry-header .schoolName-Date{
   display: flex;
+  padding: 10px 0px 0px 0px;
 }
 .dataEntry-header .schoolName-Date h5{
 font-size: 20px;
@@ -541,7 +548,7 @@ padding-top: 4px;
   padding-top: 20px;
 }
 .dataEntry-header .leftSide-inputs-buttons .selectOption-for-Filter{
-  height: 37px;
+  height: 41px;
   padding: 5px 40px 6px 5px;
   font-size: 16px;
   font-weight: normal;
@@ -587,6 +594,9 @@ color: #212120;
 }
 .tableBody .header-ImgAndHeading ul{
   display: flex;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
 }
 .tableBody .header-ImgAndHeading ul .img-span{
   display: flex;
@@ -616,6 +626,9 @@ color: #212120;
 /* body of table css */
 .tableBody .body-ImgAndData ul{
   display: flex;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
 }
 .tableBody .body-ImgAndData .schoolName-And-Buttons-Div{
   display: flex;
@@ -626,7 +639,7 @@ color: #212120;
   border-right: 1px solid #DAD8D5;
 }
 .tableBody .body-ImgAndData ul .body-Li-Image{
-  padding: 15px 15px 10px 16px;
+  padding: 15px 15px 10px 19px;
   border: 1px solid #DAD8D5;
 }
 .tableBody .body-ImgAndData ul .studentId{
