@@ -114,8 +114,8 @@ div#root {
   justify-content: space-between;
   padding-left: 40px;
   padding-right: 40px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  /* padding-top: 20px;
+  padding-bottom: 20px; */
 }
 .headerMainDiv .header h5{
   margin: 0px;
@@ -125,10 +125,11 @@ div#root {
   font-size: 24px;
 }
 .headerMainDiv .header span{
-font-size: 14px;
-font-weight: normal;
-color: #767573;
-padding-top: 6px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #767573;
+  display: flex;
+  align-items: center;
 }
 /* login page */
 
@@ -204,7 +205,7 @@ margin: 20px 0px 0px 0px;
 }
 .container-popup .mainDiv-of-popup{
   width: 50%;
-  margin: 40px 0px 0px 0px;
+  margin: 40px 0px 50px 0px;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.09);
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -838,8 +839,7 @@ color: #FFFFFF;
 .input-container input[type="file"] {
   display: none;
 }
-.input-upload-file input[type=file]:before {
-  
+.input-upload-file input[type=file]:before {  
   height: 32px;
   font-size: 14px;
   line-height: 32px;
