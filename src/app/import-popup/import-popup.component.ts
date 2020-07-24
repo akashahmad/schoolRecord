@@ -60,6 +60,6 @@ this.studentsRecord=this.studentsRecord.map((single)=>{
   return single
 })
 console.log("this.studentsRecord",this.studentsRecord)
-this.apisService.impor(this.studentsRecord)
+this.apisService.importSchoolData(this.studentsRecord)
   }
 }
