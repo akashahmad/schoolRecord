@@ -803,3 +803,54 @@ color: #FFFFFF;
 .body-of-data-white-color{
   background-color: #fff;
 }
+
+/* browse file new */
+.input-upload-file .input-container {
+  position: relative;
+  width: 79%
+
+}
+.input-container label {
+  padding: 10px;
+    position: relative;
+    height: 29px;
+    border-radius: 4px;
+    border: solid 1px #DAD8D5;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #767573;
+}
+.file-icon {
+  position: absolute;
+  right: 17px;
+  top: 11px;
+}
+.input-upload-file {
+  width: 83%;
+  display: flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  justify-content: center;
+  /* position: relative; */
+}
+.input-container input[type="file"] {
+  display: none;
+}
+.input-upload-file input[type=file]:before {
+  
+  height: 32px;
+  font-size: 14px;
+  line-height: 32px;
+  content: '';
+  display: inline-block;
+  background: white;
+  border: 1px solid #c9c9c9;
+  padding: 0 10px;
+  border-radius: 2px;
+}
+
+
+
+

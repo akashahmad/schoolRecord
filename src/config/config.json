@@ -1,5 +1,5 @@
 {
-  "apiUrl": "http://simulation-api.adaptive.dev.rcsnp.rsiapps.com",
+  "apiUrl": "https://api-archone-student-kaleem.herokuapp.com/archone/v1",
     "version": "1.0",
       "registeredUsers": [{ "login": "test", "password": "test" },
       { "login": "test1", "password": "test1" },

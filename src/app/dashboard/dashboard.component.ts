@@ -15,4 +15,7 @@ logout(){
   this.router.navigateByUrl('login')
   // window.location.href='http://localhost:4200/login'
 }
+import(){
+  this.router.navigateByUrl('importPopup')
+}
 }

@@ -1,6 +1,7 @@
 <!-- <p>dashboard</p>
 <button (click)="logout()">Logout<button> -->
-<div class="container-fluid">
+
+  <div class="container-fluid">
     <div
         class="dataEntry-container">
         <!-- {/* data entry heading portion */} -->
@@ -24,6 +25,9 @@
                     <div>
                         <select class="selectOption-for-Filter fnt-family-sans">
                             <option>Filter By</option>
+                            <option>Name</option>
+                            <option>Previous School</option>
+                            <option>Id</option>
                         </select>
                     </div>
                     <div>
@@ -33,8 +37,8 @@
                 </div>
                 <!-- {/* buttons */} -->
                 <div class="buttonMainDiv">
-                    <button class="commonButton buttonColor btn-black mrg-left-10 fnt-family-sans">Add Student</button>
-                    <button class="commonButton buttonColor btn-red mrg-left-10 fnt-family-sans">Import File</button>
+                    <!-- <button class="commonButton buttonColor btn-black mrg-left-10 fnt-family-sans">Add Student</button> -->
+                    <button class="commonButton buttonColor btn-red mrg-left-10 fnt-family-sans" (click)="import()">Import File</button>
                 </div>
             </div>
         </div>
