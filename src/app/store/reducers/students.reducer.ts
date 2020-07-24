@@ -10,7 +10,13 @@ export interface State {
 }
 
 export const initialState: State = {
-  students: [],
+  students: [
+    {
+      "name":"hassna",
+      "email":"i.hassansattar@gmail.com",
+      "phone":"03458355766"
+    }
+  ],
   error: ""
 };
 
