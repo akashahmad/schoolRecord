@@ -27,7 +27,13 @@ export class DashboardComponent implements OnInit {
   }
   setEditUserId(id)
   {
-    this.editStudentId =id
+    
+    if(id==this.editStudentId){
+      this.editStudentId =''
+    }
+    else{
+      this.editStudentId =id
+    }
   }
   checkId(id){
     return id == this.editStudentId;
