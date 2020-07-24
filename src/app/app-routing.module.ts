@@ -1,4 +1,4 @@
-import { AuthenticationService } from './sevices/authentication.service';
+import { AuthenticationService } from './services/authentication.service';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
