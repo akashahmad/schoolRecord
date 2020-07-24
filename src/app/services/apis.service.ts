@@ -5,5 +5,8 @@ import { Injectable } from '@angular/core';
 })
 export class ApisService {
  
-  constructor() { }
+  constructor() {}
+  impor(da){
+console.log("data",da)
+  }
 }

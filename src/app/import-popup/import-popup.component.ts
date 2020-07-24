@@ -1,3 +1,4 @@
+import { ApisService } from './../services/apis.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from "@angular/router";
 @Component({
@@ -7,8 +8,8 @@ import { Router } from "@angular/router";
 export class ImportPopupComponent implements OnInit {
   studentsRecord = []
   previousSchool=""
-  constructor(private router: Router) { }
-
+  constructor(private router: Router,private apisService:ApisService) { }
+ 
   ngOnInit(): void {
   }
   close() {
@@ -59,5 +60,6 @@ this.studentsRecord=this.studentsRecord.map((single)=>{
   return single
 })
 console.log("this.studentsRecord",this.studentsRecord)
+this.apisService.impor(this.studentsRecord)
   }
 }
