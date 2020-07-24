@@ -5,16 +5,23 @@ import axios from 'axios';
   providedIn: 'root'
 })
 export class ApisService {
- 
-  constructor() {}
-  importSchoolData(record){
-    axios.post(apiUrl+'/student',{
-      students:record
-    }).then(res=>{
-console.log(res)
-    }).catch(err=>{
-      console.log('err',err)
+  constructor() { }
+  importSchoolData(record) {
+    return axios.post(apiUrl + '/student', {
+      students: record
+    }, {
+      headers: {
+        "Content-Type": "application/json"
+      }
     })
-// console.log("data",record)
+    // console.log("data",record)
+  }
+  getSchoolData() {
+    return axios.get(apiUrl + '/student', {
+      headers: {
+        "Content-Type": "application/json"
+      }
+    })
+
   }
 }

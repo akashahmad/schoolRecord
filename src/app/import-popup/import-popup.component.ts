@@ -8,6 +8,7 @@ import { Router } from "@angular/router";
 export class ImportPopupComponent implements OnInit {
   studentsRecord = []
   previousSchool = ""
+  notInserted = ""
   constructor(private router: Router, private apisService: ApisService) { }
 
   ngOnInit(): void {
@@ -56,7 +57,8 @@ export class ImportPopupComponent implements OnInit {
       single.previousSchool = this.previousSchool
       return single
     })
-    console.log("this.studentsRecord", this.studentsRecord)
-    this.apisService.importSchoolData(this.studentsRecord)
+    // console.log("this.studentsRecord", this.studentsRecord)
+    this.apisService.importSchoolData(this.studentsRecord).then(res => {
+    })
   }
 }

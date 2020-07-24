@@ -1,21 +1,35 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from "@angular/router";
+import { ApisService } from './../services/apis.service';
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
 })
 export class DashboardComponent implements OnInit {
-
-  constructor(private router: Router) { }
+  records = []
+  editStudentId = ''
+  constructor(private router: Router, private apisService: ApisService) { }
 
   ngOnInit(): void {
-   }
-logout(){
-  localStorage.clear()
-  this.router.navigateByUrl('login')
-  // window.location.href='http://localhost:4200/login'
-}
-import(){
-  this.router.navigateByUrl('importPopup')
-}
+    this.apisService.getSchoolData().then(res => {
+      this.records = res.data.data
+    })
+
+  }
+
+  logout() {
+    localStorage.clear()
+    this.router.navigateByUrl('login')
+    // window.location.href='http://localhost:4200/login'
+  }
+  import() {
+    this.router.navigateByUrl('importPopup')
+  }
+  setEditUserId(id)
+  {
+    this.editStudentId =id
+  }
+  checkId(id){
+    return id == this.editStudentId;
+  }
 }

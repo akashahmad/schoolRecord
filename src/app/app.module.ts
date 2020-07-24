@@ -21,7 +21,7 @@ import {from} from 'rxjs'
     BrowserModule,
     AppRoutingModule,
     FormsModule
-  ],
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
