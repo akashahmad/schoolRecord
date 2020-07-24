@@ -8,7 +8,7 @@ import {  ImportPopupComponent} from "./import-popup/import-popup.component";
 const routes: Routes = [
   { path: '', component: DashboardComponent, canActivate: [AuthenticationService] },
   { path: 'login', component: LogInComponent },
-  {path:'importPopup',component:ImportPopupComponent,canActivate: [AuthenticationService]}
+  {path:'importPopup',component:ImportPopupComponent,canActivate: [AuthenticationService]},
 ];
 
 @NgModule({

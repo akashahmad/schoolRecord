@@ -8,14 +8,15 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ImportPopupComponent } from './import-popup/import-popup.component';
 import { HeaderComponent } from './header/header.component';
 import {FormsModule} from "@angular/forms"
-import {from} from 'rxjs'
+import {from} from 'rxjs';
+
 @NgModule({
   declarations: [
     AppComponent,
     LogInComponent,
     DashboardComponent,
     ImportPopupComponent,
-    HeaderComponent
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
