@@ -8,9 +8,13 @@ export class ApisService {
  
   constructor() {}
   importSchoolData(record){
-    axios.post(apiUrl+'/',).then(res=>{
-
+    axios.post(apiUrl+'/student',{
+      students:record
+    }).then(res=>{
+console.log(res)
+    }).catch(err=>{
+      console.log('err',err)
     })
-console.log("data",record)
+// console.log("data",record)
   }
 }
