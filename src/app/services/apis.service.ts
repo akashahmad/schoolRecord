@@ -14,7 +14,6 @@ export class ApisService {
         "Content-Type": "application/json"
       }
     })
-    // console.log("data",record)
   }
   getSchoolData() {
     return axios.get(apiUrl + '/student', {

@@ -43,21 +43,16 @@ export class ImportPopupComponent implements OnInit {
           jsonObj.push(obj);
         }
       }
-      console.log(jsonObj)
       this.studentsRecord = [...jsonObj]
 
       // all rows in the csv file
-      //  console.log(">>>>>>>>>>>>>>>>>", lines);
     }
   }
   import() {
-    // console.log("previosschool",this.previousSchool);
-    // console.log("studentsRecord",this.studentsRecord);
     this.studentsRecord = this.studentsRecord.map((single) => {
       single.previousSchool = this.previousSchool;
       return single;
     })
-    console.log("this.studentsRecord", this.studentsRecord)
     this.apisService.importSchoolData(this.studentsRecord).then(res => {
       this.notInserted = res.data.webkitfullscreenerror;
       window.alert("All students inserted successfully"+(this.notInserted?" except "+this.notInserted:""));
